@@ -1,0 +1,663 @@
+@import url("/fonts/Gilroy/stylesheet.css");
+@import url("/fonts/TT-Bricks/stylesheet.css");
+
+main{
+  position: relative;
+  min-height: calc(100vh - 125px - 237px);
+}
+@mixin centerMixin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin description{
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.relative{
+  position: relative;
+}
+.margin-right-32{
+  margin-right: 32px;
+}
+.container{
+  max-width: 1277px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.display-flex{
+  display: flex;
+  &__center{
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+// Header стили
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  position: relative;
+  padding: 40px 0 40px 0;
+  &__background{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    height: 131px;
+    background-color: #FCF8F3;
+    width: 100%;
+  }
+}
+.logo-text{
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  & > a {
+    text-decoration: none;
+    color: black;
+  }
+}
+.link-to-likes, .link-to-cart{
+  text-decoration: none;
+}
+.avatar{
+  width: 40px;
+  height: 40px;
+}
+.cartLikeAvatar{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.apricot-background{
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 131px;
+  width: 964px;
+  background-color: #F9F1E7;
+}
+
+// Счетчик Лайков и В корзине
+.cartCount, .likeCount {
+  color: white;
+  line-height: 14px;
+  font-size: 12px;
+  padding: 0 4px;
+  border-radius: 50%;
+  border: 2px white solid;
+  background-color: red;
+  position: absolute;
+  top: -5px;
+  left: 10px;
+}
+
+
+.main-block{
+  margin-top: 10px;
+}
+.center{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  &__block{
+    display: block;
+  }
+  &__wrap{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+.text {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #3A3A3A;
+  &__price {
+    font-size: 24px;
+  }
+}
+.headline{
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #3A3A3A;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+
+.margin-bottom{
+  margin-bottom: 10px;
+}
+.block-with-furniture{
+  display: flex;
+  justify-content: center;
+}
+
+
+.circle{
+  top: 24px;
+  right: 24px;
+  background-color: #2EC1AC;
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  &__sale{
+    background-color: #E97171;
+  }
+  &__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+  }
+}
+
+.block{
+  background-color: #F4F5F7;
+  width: 285px;
+  margin-bottom: 16px;
+}
+
+
+
+
+//
+.tips-tricks{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  &__cross{
+    cursor: pointer;
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-left{
+      top: 161px;
+      left: -24px;
+    }
+    &-left > img{
+      transform: rotate(180deg);
+    }
+    &-right{
+      top: 161px;
+      right: -24px;
+    }
+  }
+  &__text-content{
+    padding: 16px;
+  }
+  &__block{
+    max-width: 391px;
+    max-height: 370px;
+
+  }
+  &__block:hover{
+    box-shadow: 5px 1px 18px 4px rgba(34, 60, 80, 0.2);
+  }
+  &__header{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #3A3A3A;
+    margin-bottom: 8px;
+  }
+  &__date{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #898989;
+  }
+}
+
+
+.gallery{
+  margin-bottom: 40px;
+  &__header-Share-your-setup-with{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #616161;
+    margin-bottom: 8px;
+  }
+  &__header-Funiro-Furniture{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: #3A3A3A;
+  }
+}
+.margin-bottom-16px{
+  margin-bottom: 16px;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  &__header{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+  }
+  &__item{
+    cursor: pointer;
+  }
+  &__text{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #616161;
+  }
+  &__contact{
+    max-width: 249px;
+  }
+  &__account{
+    max-width: 94px;
+  }
+  &__stay-connected{
+    max-width: 180px;
+  }
+  &__menu{
+    max-width: 104px;
+  }
+  &__stay-updated{
+    max-width: 292px;
+  }
+  &__location, &__phone{
+    display: flex;
+    align-items: center;
+  }
+}
+
+.list{
+  &__element{
+    list-style-type: none;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #616161;
+    margin-top: 16px;
+  }
+}
+.text-decoration-none{
+  text-decoration: none;
+  color: #616161;
+}
+
+
+// Для страницы Cart
+// Всего денег в Корзине
+.totalMoneyBlock{
+  width: 260px;
+  &__price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 150%;
+    color: #000;
+  }
+  &__total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
+  }
+  &__promo{
+    width: 250px;
+    height: 30px;
+    border: grey 2px solid;
+    border-radius: 10px;
+  }
+  &__count-of-money{
+
+  }
+}
+.block-with-cart-items{
+  display: flex;
+}
+
+.block-for-header-and-counter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.counter{
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  height: 30px;
+  background-color: red;
+  border-radius: 12px 12px 12px 12px / 12px 12px 12px 12px;
+  &__counterLeftCross{
+    width: 30px;
+    background-color: blue;
+    border-radius: 12px 0 0 12px / 12px 0 0 12px;
+  }
+  &__counterRightCross{
+    width: 30px;
+    background-color: green;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-radius: 0 12px 12px 0 / 0 12px 12px 0;
+  }
+  &__counterNumber{
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+
+// footer
+.band{
+  height: 2px;
+  background-color: #D8D8D8;
+  margin-bottom: 80px;
+}
+.email-send-button{
+  cursor: pointer;
+  width: 46px;
+  height: 46px;
+  background-color: #E89F71;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#email{
+  margin-right: 4px;
+  width: 242px;
+  height: 45px;
+  background: #F4F5F7;
+  border: none;
+}
+.margin-left-10px{
+  margin-left: 10px;
+}
+.block{
+  &__name{
+    margin: 16px 0 8px 16px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #3A3A3A;
+  }
+  &__description{
+    margin: 0 0 8px 16px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #898989;
+  }
+  &__price{
+    margin: 0 0 0 16px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: #3A3A3A;
+    padding-bottom: 30px;
+  }
+}
+
+// hoover на каждой карточке
+.cartLikeShare{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.hover{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #3A3A3A;
+  display: none;
+
+  &__input{
+    cursor: pointer;
+    margin-bottom: 32px;
+    z-index: 2;
+    border: none;
+    width: 202px;
+    height: 48px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #E89F71;
+  }
+}
+.block:hover .hover{
+  opacity: 0.3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.block:hover .cartLikeShare{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.block-div{
+  z-index: 10;
+  display: flex;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+  &__share{
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+  }
+  &__like{
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+  }
+}
+
+
+
+
+.link{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  &__like{}
+}
+
+
+
+@media screen and (max-width: 470px) {
+  .customer-assistance{
+    justify-content: center;
+  }
+  .gallery__header-Funiro-Furniture{
+    font-size: 26px;
+  }
+  .gallery__header-Share-your-setup-with{
+    font-size: 16px;
+  }
+  .gallery__image{
+    top: 0;
+  }
+}
+@media screen and (max-width: 966px) {
+  .center__wrap {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1276px) {
+  .container-for-furniture{
+    max-width: 966px;
+  }
+  .main-block{
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 664px) {
+  .high-quality-block{
+    position: absolute;
+    top: -81px;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    height: auto;
+    background-color: white;
+    z-index: 3;
+    &__padding{
+      padding: 20px;
+    }
+    &__header{
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 120%;
+      color: #3A3A3A;
+      margin-bottom: 16px;
+    }
+    &__paragraph{
+      max-width: 90%;
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 150%;
+      color: #898989;
+      margin-bottom: 48px;
+    }
+    &__shop-now-button{
+      border: none;
+      cursor: pointer;
+      height: 78px;
+      width: 100%;
+      border-radius: 0;
+      background: #E89F71;
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 150%;
+      color: #FFFFFF;
+    }
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .customer-assistance{
+    flex-direction: column;
+  }
+  .headline__tips-tricks{
+    margin-left: 0;
+  }
+  .footer-content__phone, .footer-content__location{
+    justify-content: center;
+  }
+  .footer-content{
+    flex-direction: column;
+    align-items: center;
+    &__header{
+      text-align: center;
+    }
+    &__contact{
+      text-align: center;
+    }
+  }
+  .footer-content > section{
+    margin-bottom: 20px;
+  }
+  .list{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 965px) {
+  .apricot-background{
+    width: 60%;
+  }
+}
+.display-none{
+  display: none;
+}
+.display-block{
+  display: block;
+}
