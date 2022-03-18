@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="likeStyles.css">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="icon" type="image/x-icon" href="../img/sofa.ico">
+    <title>Furniture Shop</title>
+</head>
+<body>
+
+<header class="container">
+    <div class="apricot-background"></div>
+    <div class="header__background"></div>
+    <div class="header">
+        <h1 class="logo-text"><a href="index.html">Funiro.</a></h1>
+        <div class="cartLikeAvatar">
+            <div class="relative  margin-right-32"><a class="link-to-likes" href="like.html"><img src="../img/Like.svg" alt="like"><span
+                    class="likeCount">0</span></a></div>
+            <div class="relative margin-right-32"><a class="link-to-cart"  href="cart.html"><img src="../img/Cart.svg" alt="cart">
+                <p class="cartCount">0</p></a></div>
+            <div class="avatar"><a href="#"><img src="../img/Furniture/avatar.svg" alt="avatar"></a></div>
+        </div>
+    </div>
+</header>
+
+
+<main class="container block-with-likes">
+
+    <div class="block-with-furniture container">
+    </div>
+
+</main>
+
+
+
+<footer>
+    <article class="footer-content container">
+        <section class="footer-content__contact">
+            <h3 class="footer-content__header margin-bottom-16px">Funiro.</h3>
+            <p class="footer-content__text margin-bottom-16px">Worldwide furniture store since 2020. We sell over
+                1000+ branded
+                products on our website</p>
+            <div class="footer-content__location margin-bottom-16px">
+                <img src="../img/Furniture/map.svg" alt="map">
+                <span class="footer-content__text margin-left-10px">Sawojajar Malang, Indonesia</span>
+            </div>
+            <div class="footer-content__phone margin-bottom-16px">
+                <img src="../img/Furniture/phone.svg" alt="phone">
+                <span class="footer-content__text margin-left-10px"><a class="text-decoration-none"
+                                                                       href="tel:+62894563455">+6289 456 3455</a></span>
+            </div>
+            <a class="footer-content__text text-decoration-none" href="index.html">www.funiro.com</a>
+
+        </section>
+        <section class="footer-content__item footer-content__menu">
+            <h3 class="footer-content__header ">Menu</h3>
+            <ul class="list">
+                <li class="list__element"><a class="text-decoration-none" href="#">Products</a></li>
+                <li class="list__element"><a class="text-decoration-none" href="#">Rooms</a></li>
+                <li class="list__element"><a class="text-decoration-none" href="#">Inspirations</a></li>
+                <li class="list__element"><a class="text-decoration-none" href="#">About Us</a></li>
+                <li class="list__element"><a class="text-decoration-none" href="#">Terms & Policy</a></li>
+            </ul>
+        </section>
+        <section class="footer-content__item footer-content__account">
+            <h3 class="footer-content__header">Account</h3>
+            <ul class="list">
+                <li class="list__element"><a class="text-decoration-none" href="#">My Account</a></li>
+                <li class="list__element"><a class="text-decoration-none" href="#">Checkout</a></li>
+                <li class="list__element"><a class="text-decoration-none" href="#">My Cart</a></li>
+                <li class="list__element"><a class="text-decoration-none" href="#">My catalog</a></li>
+            </ul>
+        </section>
+        <section class="footer-content__item footer-content__stay-connected stay-connected">
+            <h3 class="footer-content__header">Stay Connected</h3>
+            <ul class="list">
+                <li class="list__element"><a class="text-decoration-none" href="#">Facebook</a></li>
+                <li class="list__element"><a class="text-decoration-none" href="#">Instagram</a></li>
+                <li class="list__element"><a class="text-decoration-none" href="#">Twitter</a></li>
+            </ul>
+        </section>
+        <section class="footer-content__stay-updated ">
+            <h3 class="footer-content__header margin-bottom-16px">Stay Updated</h3>
+            <div class="display-flex enter-email">
+                <input type="email" id="email" placeholder="Enter your email">
+                <label for="email">
+                    <div class="email-send-button">
+                        <img src="../img/Furniture/send.svg" alt="">
+                    </div>
+                </label>
+            </div>
+        </section>
+    </article>
+</footer>
+
+<script type="module" src="localStore.js"></script>
+<script type="module" src="render.js"></script>
+<script type="module" src="hideUncoverFooter.js"></script>
+<script type="module" src="mainLikes.js"></script>
+
+</body>
+</html>
